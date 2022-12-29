@@ -6,12 +6,12 @@ import pickle
 
 st.title("Diabetes Prediction Webb App")
 
-#loading the saved model
+
 loaded_model=pickle.load(open('dmodel.sav','rb'))
 
 #creating a function for preddiction
 def diabetes_prediction(input_data):
-  #input_data=(5,166,72,19,175,25.8,0.587,51)
+
   id=np.asarray(input_data)
   input_data_reshaped=id.reshape(1,-1)
   prediction=loaded_model.predict(input_data_reshaped)
