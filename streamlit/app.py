@@ -5,6 +5,7 @@ import pickle
 
 
 st.title("Diabetes Prediction Webb App")
+st.write("hello")
 
 
 loaded_model=pickle.load(open('dmodel.sav','rb'))
