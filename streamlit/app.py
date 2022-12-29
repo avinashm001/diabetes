@@ -7,7 +7,7 @@ import pickle
 st.title("Diabetes Prediction Webb App")
 
 #loading the saved model
-loaded_model=pickle.load(open('diabetesmodel.sav','rb'))
+loaded_model=pickle.load(open('dmodel.sav','rb'))
 
 #creating a function for preddiction
 def diabetes_prediction(input_data):
